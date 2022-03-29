@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=LatoSdisplay=swap');
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #141414;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+body .page{
+    margin: 20px 80px;
+}
+/* Barre de navigation */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #141414;
+    padding: 10px 0px;
+}
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+nav .onglets a{
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav .buttons button{
+    padding: 13px 20px;
+    color: #fff;
+    border: none;
+    
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+nav .buttons .Login{
+    background-color: inherit;
+    margin-right: 10px;
+    color: #8f8f8f;
+}
+nav .buttons .Register{
+    background-color: #f54266;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+/* Fin de la barre de navigation */
+
+/* Partie header */
+header{
+    margin-top: 40px;
+    background-image: url(20210507_213244.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 450px;
+}
+header h1{
+    text-align: center;
+    font-size: 60px;
+    padding: 150px;
+}
+/* Fin de la partie header */
+
+/* Pied de page */
+
+footer{
+    padding: 25px 100px;
+    background-color: #1a1a1a;
+    color: #828282;
+}
+
+
+.Hi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Fin du pied de page */
+
+@media screen and (max-width: 640px){
+    body .page{
+        margin: 10px;
+    }
+    nav .onglets{
+        display: none;
+    }
+    header{ 
+        margin-top: 20px;
+        background-size: 250px 250px;
+    }
+    header h1{
+        font-size: 30px;
+        padding: 100px;
+    }
+}
+
